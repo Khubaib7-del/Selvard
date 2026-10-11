@@ -19,9 +19,9 @@
 
 Current source review: [implemented preview scope](docs/product/MVP_SCOPE.md) and [9 October engineering review](docs/product/PROJECT_REVIEW_2026-10-09.md). Phase completion records do not replace the remaining device and release checks.
 
-[**⬇️ Download Latest APK**](#-download--sideload-guide) • [**✨ Key Features**](#-core-guardians) • [**⚠️ Download & Install Help**](#-install-help--troubleshooting) • [**🤝 Contributing**](CONTRIBUTING.md) • [**📜 Code of Conduct**](CODE_OF_CONDUCT.md)
+[**⬇️ Download Latest APK**](#get-selvard) • [**📂 View the Repository**](https://github.com/Khubaib7-del/MARK-42) • [**✨ Key Features**](#-core-guardians) • [**⚠️ Install Help**](#download-and-install-help) • [**🤝 Contributing**](CONTRIBUTING.md)
 
-[**Download `selvard-v0.9.2-ui-polish.apk` (v0.9.2, UI polish)**](https://github.com/Khubaib7-del/MARK-42/releases/download/v0.9.2-ui-polish/selvard-v0.9.2-ui-polish.apk) — sideload on any Android 8.0+ device. This debug test build adds the reviewed onboarding, guardian UI polish, smoother motion, local runtime diagnostics, and VPN lifecycle fixes. The release notes list its remaining limits. Download stuck at 100%, or Play Protect blocking the install? See [install help](docs/product/INSTALL_HELP.md).
+[**Download Selvard v0.9.2**](https://github.com/Khubaib7-del/MARK-42/releases/download/v0.9.2-ui-polish/selvard-v0.9.2-ui-polish.apk) · [View release notes](https://github.com/Khubaib7-del/MARK-42/releases/tag/v0.9.2-ui-polish) · [View repository](https://github.com/Khubaib7-del/MARK-42)
 
 </div>
 
@@ -41,30 +41,28 @@ Security software can receive sensitive access to a device. Selvard prioritizes 
 
 ---
 
-## 📦 Download & Sideload Guide
+## Get Selvard
 
-### Latest Release
-👉 [**Download `selvard-v0.9.2-ui-polish.apk` (v0.9.2, UI polish)](https://github.com/Khubaib7-del/MARK-42/releases/download/v0.9.2-ui-polish/selvard-v0.9.2-ui-polish.apk)
-- **File size**: ~16.9 MB
-- **Target OS**: Android 8.0 Oreo (API 26) through Android 15 (API 35)
+Selvard is available as a direct Android APK from the official [GitHub repository](https://github.com/Khubaib7-del/MARK-42).
+
+[**Download `selvard-v0.9.2-ui-polish.apk`**](https://github.com/Khubaib7-del/MARK-42/releases/download/v0.9.2-ui-polish/selvard-v0.9.2-ui-polish.apk) · [Release page](https://github.com/Khubaib7-del/MARK-42/releases/tag/v0.9.2-ui-polish)
+
+- **Version**: v0.9.2 UI polish — a debug-signed private test build.
+- **File size**: ~16.9 MB.
+- **Target OS**: Android 8.0 Oreo (API 26) through Android 15 (API 35).
 - **SHA-256**: `178671d92500b86c4b8df64d6148d81f2b39c9003828811838b0a1e5be397b08` (also attached to the release as `selvard-v0.9.2-ui-polish.apk.sha256`).
 
 ---
 
-## 🛠️ Install Help & Troubleshooting
+## Download and install help
 
-Full write-up with sources and what we did and did not verify: [`docs/product/INSTALL_HELP.md`](docs/product/INSTALL_HELP.md).
+1. Open the [release page](https://github.com/Khubaib7-del/MARK-42/releases/tag/v0.9.2-ui-polish) and download the APK.
+2. If the link opened inside Instagram, WhatsApp, X, Reddit, or the GitHub mobile app, use that page's **Open in browser** option first. In-app browsers can interrupt or loop downloads.
+3. If Chrome repeatedly blocks, restarts, or stalls the download, copy the release-page link into Firefox, Brave, Edge, or Samsung Internet and download it there. You can also download it on a computer and transfer it to your phone.
+4. Before installing, confirm the filename and SHA-256 checksum above match the official release. A different browser may solve a download problem, but it does not change Android's security checks.
 
-### 1. Download stuck at 100% (10.33 MB / 10.33 MB)?
-- **Most likely cause**: the link was opened inside an in-app tab (Chrome Custom Tab) from another app such as GitHub mobile or WhatsApp. Downloads started there are known to hang at 100%. The file GitHub serves is complete and correctly labeled.
-- **Fix**: in the tab's `⋮` menu tap **Open in Chrome** (or paste the link into Chrome/Firefox/Brave directly) and download again. Then open Chrome `⋮` > **Downloads**; if it shows a "might be harmful" warning for this APK, tap **Keep** / **Download anyway**.
-- **Other routes**: download on a computer and copy the APK to the phone, or use `adb install -r`. Compare the file with the release's `.sha256` to confirm it is intact.
-- We have not reproduced the stall on a device, so the exact cause is unconfirmed; the install-help page says so.
+Because this pre-release is debug-signed, Android or Play Protect can warn about it. Only proceed with a file obtained from this repository or release page. For the detailed diagnosis and verification notes, see [`docs/product/INSTALL_HELP.md`](docs/product/INSTALL_HELP.md).
 
-### 2. "App blocked to protect your device" (Play Protect)?
-- **Why**: Play Protect has not seen this developer before. Selvard builds are signed with the generic Android *debug* certificate for now. That is expected for pre-release software, and it is neither a verdict that the app is harmful nor evidence that it is safe.
-- **Install**: tap **More details** > **Install anyway**. If only **Got it** is offered, see the install-help page for the Play Protect setting.
-- **Permanent fix**: a stable owner-held release signing key plus Android developer registration (details and dates in the install-help page).
 
 ---
 
